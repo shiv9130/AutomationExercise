@@ -11,7 +11,7 @@ public class excelUtil {
 	public String ExcelFileUtil(String sheet, int row, int cell) {
 		
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\Nis\\Links\\AutomationExercise\\src\\main\\resources\\dataAutomation.xlsx");
+			FileInputStream fis = new FileInputStream("C:\\Users\\Nis\\git\\repository13\\AutomationExercise\\src\\main\\resources\\dataAutomation.xlsx");
 			Workbook  wb = WorkbookFactory.create(fis);
 			String data = wb.getSheet(sheet).getRow(row).getCell(cell).getStringCellValue();
 			return data;

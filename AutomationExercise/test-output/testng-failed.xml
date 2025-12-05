@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.test_8_verfiyProduct">
+      <class name="tests.productToggle">
         <methods>
+          <include name="toggle"/>
+          <include name="configAC"/>
           <include name="configBT"/>
           <include name="configAS"/>
-          <include name="configAC"/>
           <include name="configAM"/>
           <include name="configBM"/>
-          <include name="verifyProduct"/>
           <include name="configBC"/>
           <include name="configBS"/>
           <include name="configAT"/>
         </methods>
-      </class> <!-- tests.test_8_verfiyProduct -->
+      </class> <!-- tests.productToggle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

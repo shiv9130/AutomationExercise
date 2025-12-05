@@ -70,7 +70,7 @@ public class extentReport implements ITestListener {
 		
 		TakesScreenshot ts = (TakesScreenshot) baseClass.sdriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File tgt = new File("C:\\Users\\Nis\\Links\\AutomationExercise\\AutomationExercise\\ss"+dt+".png");
+		File tgt = new File("C:\\Users\\Nis\\git\\repository13\\AutomationExercise\\AutomationExercise\\ss"+dt+".png");
 		try {
 			FileHandler.copy(src, tgt);
 		} catch (Exception e) {
